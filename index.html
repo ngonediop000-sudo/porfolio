@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngoné Diop | Référente Digitale Premium</title>
+    <meta name="description" content="Portfolio professionnel de Ngoné Diop, experte en stratégie digitale, community management et création visuelle.">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ════════════════════════ LOADER ════════════════════════ -->
+<div id="loader">
+    <div class="loader-inner">
+        <span class="loader-name">ND</span>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+</div>
+
+<!-- ════════════════════════ CURSOR ════════════════════════ -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- ════════════════════════ PARTICLES ════════════════════════ -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- ════════════════════════ WHATSAPP FLOATING BTN ════════════════════════ -->
+<a href="https://wa.me/221778111632" target="_blank" rel="noopener"
+   class="whatsapp-float" aria-label="Discuter sur WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Discutons sur WhatsApp</span>
+</a>
+
+<!-- ════════════════════════ NAVBAR ════════════════════════ -->
+<nav class="navbar">
+    <div class="logo">ND<span>.</span></div>
+    <ul class="nav-links">
+        <li><a href="#home"><span>01</span>Accueil</a></li>
+        <li><a href="#about"><span>02</span>À Propos</a></li>
+        <li><a href="#skills"><span>03</span>Compétences</a></li>
+        <li><a href="#services"><span>04</span>Services</a></li>
+        <li><a href="#portfolio"><span>05</span>Portfolio</a></li>
+        <li><a href="#contact"><span>06</span>Contact</a></li>
+    </ul>
+    <a href="https://wa.me/221778111632" target="_blank" rel="noopener" class="nav-cta">
+        <i class="fab fa-whatsapp"></i> Démarrer un projet
+    </a>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À Propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- ════════════════════════ HERO ════════════════════════ -->
+<section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="hero-layout">
+        <div class="hero-left">
+            <p class="hero-eyebrow" data-aos="fade-up" data-aos-delay="200">
+                <span class="eyebrow-dot"></span>Bienvenue dans mon univers
+            </p>
+            <h1 class="hero-name" data-aos="fade-up" data-aos-delay="300">
+                <span class="name-line">Ngoné</span>
+                <span class="name-line italic-name">Diop</span>
+            </h1>
+            <div class="hero-role-wrap" data-aos="fade-up" data-aos-delay="400">
+                <p class="hero-role">Référente <span class="role-accent">Digitale</span></p>
+            </div>
+            <p class="hero-slogan" data-aos="fade-up" data-aos-delay="500">
+                "J'aide les marques et entrepreneurs à développer leur présence digitale."
+            </p>
+            <div class="hero-btns" data-aos="fade-up" data-aos-delay="600">
+                <a href="#services" class="btn btn-premium">
+                    <span>Découvrir mes services</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="https://wa.me/221778111632" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Me contacter</span>
+                </a>
+            </div>
+            <div class="hero-scroll-hint" data-aos="fade-up" data-aos-delay="700">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </div>
+
+        <div class="hero-right" data-aos="fade-left" data-aos-delay="400">
+            <div class="hero-image-frame">
+                <div class="frame-glow"></div>
+                <div class="image-wrapper">
+                    <img src="Ngone Diop.jpeg"
+                         alt="Ngoné Diop — Référente Digitale">
+                </div>
+                <div class="frame-tag frame-tag-1">
+                    <i class="fas fa-star"></i>
+                    <span>Premium</span>
+                </div>
+                <div class="frame-tag frame-tag-2">
+                    <span class="tag-num counter" data-target="15">0</span>
+                    <span>Projets</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="hero-marquee">
+        <div class="marquee-track">
+            <span>Community Management</span><span class="marquee-dot">✦</span>
+            <span>Design Canva</span><span class="marquee-dot">✦</span>
+            <span>Branding Digital</span><span class="marquee-dot">✦</span>
+            <span>Social Media</span><span class="marquee-dot">✦</span>
+            <span>Création de Contenu</span><span class="marquee-dot">✦</span>
+            <span>Assistance Digitale</span><span class="marquee-dot">✦</span>
+            <span>Community Management</span><span class="marquee-dot">✦</span>
+            <span>Design Canva</span><span class="marquee-dot">✦</span>
+            <span>Branding Digital</span><span class="marquee-dot">✦</span>
+            <span>Social Media</span><span class="marquee-dot">✦</span>
+            <span>Création de Contenu</span><span class="marquee-dot">✦</span>
+            <span>Assistance Digitale</span><span class="marquee-dot">✦</span>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════ ABOUT ════════════════════════ -->
+<section id="about" class="about">
+    <div class="about-bg-accent"></div>
+    <div class="container">
+        <div class="about-header" data-aos="fade-up">
+            <p class="section-label"><span>02</span> À Propos</p>
+            <h2 class="section-title">Passionnée<br><em>&amp; Déterminée</em></h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text" data-aos="fade-right">
+                <p class="about-intro">Référente digitale dynamique, j'allie créativité et rigueur pour transformer vos idées en succès numériques.</p>
+                <p class="about-body">Mon approche est basée sur l'esprit d'équipe, la positivité et un partage constant de connaissances. Passionnée par l'Afrique et sa culture, j'intègre l'authenticité africaine à une esthétique numérique contemporaine dans chacune de mes créations.</p>
+                <div class="stats">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                        <span class="num counter" data-target="15">0</span><span class="stat-plus">+</span>
+                        <p>Projets réalisés</p>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                        <span class="num counter" data-target="10">0</span><span class="stat-plus">+</span>
+                        <p>Outils maîtrisés</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right" data-aos="fade-left">
+                <div class="skills-showcase">
+                    <div class="skill-pill"><i class="fas fa-lightbulb"></i><span>Organisation</span></div>
+                    <div class="skill-pill skill-pill-accent"><i class="fas fa-comments"></i><span>Communication</span></div>
+                    <div class="skill-pill"><i class="fas fa-paint-brush"></i><span>Créativité</span></div>
+                    <div class="skill-pill"><i class="fas fa-globe-africa"></i><span>Identité Africaine</span></div>
+                </div>
+                <div class="about-quote-card">
+                    <div class="quote-glow"></div>
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"L'Afrique inspire. Je mêle l'authenticité africaine à une esthétique numérique contemporaine dans chacune de mes créations."</p>
+                    <span>— Ngoné Diop</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════ COMPÉTENCES ════════════════════════ -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <p class="section-label"><span>03</span> Compétences</p>
+            <h2 class="section-title">Mon<br><em>Expertise</em></h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <!-- Digital & Social -->
+            <div class="skills-col" data-aos="fade-up" data-aos-delay="0">
+                <div class="skills-col-header">
+                    <div class="skills-col-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Digital &amp; Social</h3>
+                </div>
+                <ul class="skills-list">
+                    <li class="skill-item">
+                        <div class="skill-bullet"></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Community Management</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-bullet"></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Gestion des Réseaux Sociaux</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-bullet"></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Création de Contenu</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-bullet"></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Branding Digital</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Création & Design -->
+            <div class="skills-col" data-aos="fade-up" data-aos-delay="120">
+                <div class="skills-col-header">
+                    <div class="skills-col-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Création &amp; Design</h3>
+                </div>
+                <ul class="skills-list">
+                    <li class="skill-item">
+                        <div class="skill-bullet"></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Création de visuels Canva</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-bullet"></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Présentations PowerPoint</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-bullet"></div>
+                        <div class="skill-info">
+                            <span class="skill-name">HTML / CSS</span>
+                            <div class="skill-bar"><div class="skill-fill skill-fill-gold" data-width="45"></div></div>
+                        </div>
+                        <span class="skill-badge">Débutant</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Organisation & Gestion -->
+            <div class="skills-col" data-aos="fade-up" data-aos-delay="240">
+                <div class="skills-col-header">
+                    <div class="skills-col-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Organisation &amp; Gestion</h3>
+                </div>
+                <ul class="skills-list">
+                    <li class="skill-item">
+                        <div class="skill-bullet"></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Assistance Administrative</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="86"></div></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-bullet"></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Outils Collaboratifs</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="84"></div></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-bullet"></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Comptabilité Basique</span>
+                            <div class="skill-bar"><div class="skill-fill skill-fill-gold" data-width="60"></div></div>
+                        </div>
+                        <span class="skill-badge skill-badge-gold">Notions</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div><!-- /skills-grid -->
+
+        <!-- Outils Tag Cloud -->
+        <div class="tools-cloud" data-aos="fade-up" data-aos-delay="300">
+            <p class="tools-label">Outils &amp; Plateformes</p>
+            <div class="tools-tags">
+                <span><i class="fab fa-instagram"></i> Instagram</span>
+                <span><i class="fab fa-facebook"></i> Facebook</span>
+                <span><i class="fab fa-linkedin"></i> LinkedIn</span>
+                <span><i class="fab fa-whatsapp"></i> WhatsApp Business</span>
+                <span><i class="fas fa-pencil-ruler"></i> Canva</span>
+                <span><i class="fab fa-microsoft"></i> PowerPoint</span>
+                <span><i class="fab fa-google"></i> Google Workspace</span>
+                <span><i class="fab fa-trello"></i> Trello</span>
+                <span><i class="fab fa-html5"></i> HTML / CSS</span>
+                <span><i class="fas fa-calculator"></i> Comptabilité</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ════════════════════════ SERVICES ════════════════════════ -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <p class="section-label"><span>04</span> Services</p>
+            <h2 class="section-title">Mes Services<br><em>Premium</em></h2>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="service-card-inner">
+                    <div class="service-num">01</div>
+                    <div class="service-icon-wrap"><i class="fas fa-hashtag"></i></div>
+                    <h3>Social Media</h3>
+                    <p>Stratégie et gestion de vos réseaux sociaux pour booster votre visibilité et engager durablement votre communauté.</p>
+                    <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                </div>
+                <div class="service-card-glow"></div>
+            </div>
+
+            <div class="service-card service-card-featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card-inner">
+                    <div class="service-num">02</div>
+                    <div class="service-icon-wrap"><i class="fas fa-palette"></i></div>
+                    <h3>Design Canva</h3>
+                    <p>Création de visuels percutants, modernes et parfaitement alignés à votre image de marque.</p>
+                    <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                </div>
+                <div class="service-card-glow"></div>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card-inner">
+                    <div class="service-num">03</div>
+                    <div class="service-icon-wrap"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Assistance Digitale</h3>
+                    <p>Support administratif et gestion d'outils collaboratifs pour optimiser votre flux de travail au quotidien.</p>
+                    <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                </div>
+                <div class="service-card-glow"></div>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card-inner">
+                    <div class="service-num">04</div>
+                    <div class="service-icon-wrap"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Branding Digital</h3>
+                    <p>Construction de votre identité de marque en ligne : positionnement, charte visuelle, storytelling digital.</p>
+                    <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                </div>
+                <div class="service-card-glow"></div>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card-inner">
+                    <div class="service-num">05</div>
+                    <div class="service-icon-wrap"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Création de Contenu</h3>
+                    <p>Rédaction de captions, scripts vidéo, posts engageants et contenus storytelling pour vos réseaux.</p>
+                    <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                </div>
+                <div class="service-card-glow"></div>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card-inner">
+                    <div class="service-num">06</div>
+                    <div class="service-icon-wrap"><i class="fas fa-file-powerpoint"></i></div>
+                    <h3>Présentations Premium</h3>
+                    <p>Création de présentations PowerPoint et Canva professionnelles, claires, visuellement impactantes.</p>
+                    <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                </div>
+                <div class="service-card-glow"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════ PORTFOLIO ════════════════════════ -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <p class="section-label"><span>05</span> Portfolio</p>
+            <h2 class="section-title">Mon Univers<br><em>Créatif</em></h2>
+        </div>
+
+        <!-- Projet Phare -->
+        <div class="project-featured" data-aos="fade-up">
+            <div class="project-featured-img">
+                <img src="cereales.png"
+                     alt="Ngueweul Céréales — Branding et packaging">
+                <div class="project-featured-badge">✦ Projet Phare</div>
+            </div>
+            <div class="project-featured-content">
+                <p class="portfolio-category">Branding · Entrepreneuriat · Produits Locaux</p>
+                <h3>Ngueweul Céréales</h3>
+                <p class="project-desc">Ngueweul Céréales est un projet entrepreneurial né de la passion pour les produits locaux sénégalais. Une marque qui valorise nos céréales traditionnelles avec un packaging moderne et une communication digitale premium.</p>
+                <div class="project-tags">
+                    <span>Produits locaux</span>
+                    <span>Branding moderne</span>
+                    <span>Passion africaine</span>
+                </div>
+                <a href="https://www.instagram.com/matya_cereales_?igsh=OGx5am9qbnExMTdu&utm_source=ig_contact_invite"
+                   target="_blank" rel="noopener" class="btn btn-premium">
+                    <i class="fab fa-instagram"></i>
+                    <span>Voir sur Instagram</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Grille des autres projets -->
+        <div class="portfolio-grid">
+
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="0">
+                <div class="portfolio-img">
+                    <img src="Ngone 2.png"
+                         alt="Passion Maquillage">
+                    <div class="portfolio-overlay">
+                        <p class="portfolio-category">Beauté · Créativité Africaine</p>
+                        <h3>Passion Maquillage</h3>
+                        <p class="portfolio-text">L'art du maquillage comme expression créative. Chaque look est une œuvre qui célèbre la beauté africaine moderne.</p>
+                        <div class="project-tags project-tags-sm">
+                            <span>Créativité</span>
+                            <span>Africaine Moderne</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="120">
+                <div class="portfolio-img">
+                    <img src="parfums.jpeg"
+                         alt="Vente de Parfums">
+                    <div class="portfolio-overlay">
+                        <p class="portfolio-category">Commerce · Lifestyle</p>
+                        <h3>Vente de Parfums</h3>
+                        <p class="portfolio-text">Sélection et vente de parfums avec une communication soignée sur les réseaux sociaux pour toucher une clientèle premium.</p>
+                        <div class="project-tags project-tags-sm">
+                            <span>Social Media</span>
+                            <span>Lifestyle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="240">
+                <div class="portfolio-img">
+                    <img src="reseau.avif"
+                         alt="Gestion Réseaux Sociaux">
+                    <div class="portfolio-overlay">
+                        <p class="portfolio-category">Social Media · Contenu</p>
+                        <h3>Gestion Réseaux Sociaux</h3>
+                        <p class="portfolio-text">Planification, création de contenu et animation de comptes pour des marques locales sénégalaises.</p>
+                        <div class="project-tags project-tags-sm">
+                            <span>Community</span>
+                            <span>Contenu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bannière Afrique -->
+        <div class="africa-banner" data-aos="fade-up">
+            <div class="africa-banner-glow"></div>
+            <div class="africa-banner-content">
+                <div class="africa-icon"><i class="fas fa-globe-africa"></i></div>
+                <div>
+                    <h3>L'Afrique Inspire</h3>
+                    <p>Je mêle l'authenticité africaine à une esthétique numérique contemporaine dans chacune de mes créations. Chaque projet raconte une histoire, chaque visuel porte une âme.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ════════════════════════ CONTACT ════════════════════════ -->
+<section id="contact" class="contact">
+    <div class="contact-bg-glow"></div>
+    <div class="container">
+        <div class="contact-layout">
+
+            <div class="contact-left" data-aos="fade-right">
+                <p class="section-label"><span>06</span> Contact</p>
+                <h2 class="contact-title">Travaillons<br><em>Ensemble</em></h2>
+                <p class="contact-intro">Vous avez un projet en tête ? Je serais ravie d'en discuter avec vous. Contactez-moi par message ou directement sur WhatsApp.</p>
+
+                <div class="contact-info">
+                    <a href="mailto:ngonediop000@gmail.com" class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                        <span>ngonediop000@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/221778111632" target="_blank" rel="noopener" class="contact-info-item contact-whatsapp">
+                        <div class="contact-info-icon contact-info-icon--green"><i class="fab fa-whatsapp"></i></div>
+                        <span>+221 77 811 16 32</span>
+                    </a>
+                </div>
+
+                <div class="contact-socials">
+                    <a href="https://www.linkedin.com/in/ngoné-diop-0a5126380?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                       target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/matya_cereales_?igsh=OGx5am9qbnExMTdu&utm_source=qr"
+                       target="_blank" rel="noopener" class="social-btn social-btn--insta" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61567593626675"
+                       target="_blank" rel="noopener" class="social-btn social-btn--fb" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/221778111632" target="_blank" rel="noopener"
+                       class="social-btn social-btn--wa" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:ngonediop000@gmail.com" class="social-btn" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-right" data-aos="fade-left">
+                <div class="contact-form-card">
+                    <div class="form-glow"></div>
+                    <form id="contact-form">
+                        <div class="input-row">
+                            <div class="input-field">
+                                <input type="text" id="name" placeholder=" " required>
+                                <label for="name">Votre Nom</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="email" id="email" placeholder=" " required>
+                                <label for="email">Votre Email</label>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="subject" placeholder=" " required>
+                            <label for="subject">Sujet</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="message" placeholder=" " rows="5" required></textarea>
+                            <label for="message">Votre Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-premium btn-full">
+                            <span>Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="form-divider"><span>ou contactez-moi directement</span></div>
+                    <a href="https://wa.me/221778111632" target="_blank" rel="noopener"
+                       class="btn btn-whatsapp btn-full">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Écrire sur WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════ FOOTER ════════════════════════ -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-logo">ND<span>.</span></div>
+        <p>&copy; 2026 Ngoné Diop — Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="#home">Accueil</a>
+            <a href="#skills">Compétences</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="texte.js"></script>
+</body>
+</html>
