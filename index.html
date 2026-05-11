@@ -550,30 +550,19 @@
             <div class="contact-right" data-aos="fade-left">
                 <div class="contact-form-card">
                     <div class="form-glow"></div>
-                    <form id="contact-form">
-                        <div class="input-row">
-                            <div class="input-field">
-                                <input type="text" id="name" placeholder=" " required>
-                                <label for="name">Votre Nom</label>
-                            </div>
-                            <div class="input-field">
-                                <input type="email" id="email" placeholder=" " required>
-                                <label for="email">Votre Email</label>
-                            </div>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" id="subject" placeholder=" " required>
-                            <label for="subject">Sujet</label>
-                        </div>
-                        <div class="input-field">
-                            <textarea id="message" placeholder=" " rows="5" required></textarea>
-                            <label for="message">Votre Message</label>
-                        </div>
-                        <button type="submit" class="btn btn-premium btn-full">
-                            <span>Envoyer le message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
+                   <form id="contact-form">
+
+  <input type="text" id="nom" placeholder="Votre nom" required>
+
+  <input type="email" id="email" placeholder="Votre email" required>
+
+  <textarea id="message" placeholder="Votre message" required></textarea>
+
+  <button type="submit">Envoyer</button>
+
+  <p id="form-status"></p>
+
+</form>
                     <div class="form-divider"><span>ou contactez-moi directement</span></div>
                     <a href="https://wa.me/221778111632" target="_blank" rel="noopener"
                        class="btn btn-whatsapp btn-full">
@@ -604,5 +593,6 @@
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="texte.js"></script>
+<script type="module" src="formulaire-contact.js"></script>
 </body>
 </html>
